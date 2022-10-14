@@ -1,0 +1,15 @@
+// scss variables
+@import "./variables";
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-wallet-instructions-container {
+  display: flex;
+}
+
+.connect-wallet-button-container {
+  display: flex;
+}

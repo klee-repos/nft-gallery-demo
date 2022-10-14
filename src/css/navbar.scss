@@ -1,0 +1,60 @@
+// scss variables
+@import "./variables";
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+}
+
+.navbar-left-container {
+  display: flex;
+  align-items: center;
+  width: calc(15% - $side-margin);
+  height: 100%;
+}
+
+.navbar-middle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(70% - $side-margin * 2);
+  height: 100%;
+}
+
+.navbar-input-container {
+  justify-content: center;
+  display: flex;
+  width: calc(100% / 2);
+}
+
+.navbar-input {
+  width: 90%;
+}
+
+.navbar-search-button {
+  max-width: 100%;
+}
+
+.navbar-search-button-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  text-transform: none;
+}
+
+.navbar-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(15% - $side-margin);
+  height: 100%;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}

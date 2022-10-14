@@ -1,0 +1,130 @@
+// scss variables
+@import "./variables";
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-instructions-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 81px);
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-instructions-text {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 0 20px 0;
+}
+
+.gallery-example-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  text-transform: none;
+}
+
+.pagination-container {
+  display: flex;
+  padding: 40px 0 100px;
+}
+
+.pagination-left-container {
+  display: flex;
+  padding: 10px;
+}
+
+.pagination-right-container {
+  display: flex;
+  padding: 10px;
+}
+
+.gallery-items-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+
+.gallery-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+}
+
+.nft-thumbnail {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.item-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nft-content-text {
+  font-size: 16px;
+  color: $primary-text-color;
+  font-weight: 600;
+  padding: 10px 0 0 0;
+}
+
+.nft-content-id-address-container {
+  display: flex;
+  padding: 10px 0 0 0;
+}
+
+.nft-address-container {
+  display: flex;
+  cursor: pointer;
+}
+
+.nft-id-text {
+  padding: 0 20px 0 0;
+}
+
+.nft-address-text {
+}
+
+.copy-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 5px;
+}
+
+.nft-content-description-container {
+  display: flex;
+}
+
+.nft-description-text {
+  font-size: 14px;
+  color: $secondary-text-color;
+  padding: 10px 0 0 0;
+  line-height: 20px;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+.nft-description-text::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.nft-description-text::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.nft-description-text::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.1);
+}

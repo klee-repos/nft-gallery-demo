@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+// scss variables
+@import "./variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $global-background;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $subtext-color;
+}
+
+ul,
+li {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+span {
+  color: $primary-text-color;
+  font-family: $text-font;
+}
+
+.error {
+  color: $error-color;
+}
+
+.snackbar-container {
+  display: flex;
+  background-color: $global-background;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.snackbar-text {
+  color: black;
+  font-family: $text-font;
+  font-size: 14px;
+}
